@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8">
+<title>Ignacio Arfeli</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ignacio Arfeli · Techno production, mixing and mastering">
+<meta property="og:description" content="Label-ready techno. Eight years producing, mixing and mastering, 50+ Beatport top-100 charts, supported by Adam Beyer, Amelie Lens and Charlotte de Witte.">
+<meta property="og:image" content="https://chbill8.github.io/ignacio-arfeli/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%238f7dff'/%3E%3C/svg%3E">
+<meta name="description" content="Ignacio Arfeli. Techno producer, mixing and mastering engineer. Label-ready production, mixing and mastering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#0a0a0c; --bg2:#111114; --bg3:#17171b; --line:#24242a; --line2:#34343b;
+    --ink:#edebe6; --ink2:#c9c7c1; --muted:#8e8c94; --dim:#5d5b63;
+    --accent:#8f7dff; --accent-ink:#0a0a0c; --accent-soft:rgba(143,125,255,.14);
+    --ok:#4be0a0;
+    --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+    --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --gutter:clamp(16px,4vw,48px); --max:1180px;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+  section{padding-block:clamp(56px,7vw,96px);border-top:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:18px;height:1px;background:var(--accent)}
+  h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+  h2{font-size:clamp(34px,5vw,56px);font-weight:600;font-variation-settings:"wdth" 105;line-height:1.02;margin-top:14px}
+  .lede{color:var(--ink2);font-size:clamp(17px,1.6vw,19px);max-width:56ch;margin:16px 0 0}
+  .sec-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
+  .sec-head .aside{color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-align:right;white-space:nowrap;padding-bottom:6px}
+  @media(max-width:640px){.sec-head{grid-template-columns:1fr}.sec-head .aside{text-align:left;white-space:normal;padding-bottom:0}}
+
+  /* nav */
+  .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(10,10,12,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+  .mark{font-family:var(--display);font-weight:700;font-variation-settings:"wdth" 118;letter-spacing:.02em;font-size:15px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+  .mark i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+  .nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:14px;color:var(--ink2)}
+  .nav ul a:hover{color:var(--ink)}
+  @media(max-width:760px){.nav ul{display:none}}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;font-weight:600;font-size:14px;line-height:1;border:1px solid var(--line2);color:var(--ink);background:transparent;cursor:pointer;transition:border-color .2s,background .2s,transform .2s;font-family:var(--body)}
+  .btn:hover{border-color:var(--ink2)}
+  .btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .btn.primary:hover{background:#fff;transform:translateY(-1px)}
+  .btn.small{padding:10px 14px;font-size:13px}
+  .btn svg{width:14px;height:14px}
+
+  /* hero */
+  .hero{position:relative;border-top:0;padding-block:0;min-height:min(86vh,820px);display:grid;align-items:end;overflow:hidden;isolation:isolate}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:-2;filter:saturate(.85) contrast(1.05)}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,10,12,.35) 0%,rgba(10,10,12,.15) 35%,rgba(10,10,12,.92) 78%,var(--bg) 100%)}
+  .hero .wrap{padding-block:clamp(110px,16vw,180px) clamp(36px,4.5vw,56px);width:100%}
+  .hero h1{font-size:clamp(46px,8.6vw,120px);font-weight:700;line-height:.94;font-variation-settings:"wdth" 112;letter-spacing:-.03em;max-width:12ch}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero .sub{display:grid;grid-template-columns:minmax(0,52ch) auto;gap:28px;align-items:end;margin-top:24px}
+  .hero p{margin:0;font-size:clamp(16px,1.6vw,19px);color:var(--ink2)}
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:760px){.hero .sub{grid-template-columns:1fr}}
+  .hero .eyebrow{color:var(--ink2)}
+
+  /* stats bar */
+  .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:22px 0;border-left:1px solid var(--line);padding-left:20px}
+  .stat:first-child{border-left:0;padding-left:0}
+  .stat b{display:block;font-family:var(--display);font-size:clamp(26px,3vw,40px);font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+  .stat span{display:block;margin-top:6px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    @media(max-width:640px){.stats .grid{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0;padding-left:0}.stat{padding:16px 0 16px 16px}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+  /* marquee */
+  .marquee{overflow:hidden;border-bottom:1px solid var(--line);padding-block:18px;position:relative}
+  .marquee::before,.marquee::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:1;pointer-events:none}
+  .marquee::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}
+  .marquee::after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}
+  .track{display:flex;gap:0;width:max-content;animation:scroll 70s linear infinite}
+  .track span{font-family:var(--display);font-variation-settings:"wdth" 118;text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted);padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:26px}
+  .track span::after{content:"";width:4px;height:4px;border-radius:50%;background:var(--dim)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  .marquee-label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:center;margin-bottom:12px}
+
+  /* services */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+  .svc{background:var(--bg);padding:30px 28px 28px;display:flex;flex-direction:column;gap:18px;position:relative;transition:background .25s}
+  .svc:hover{background:var(--bg2)}
+  .svc .idx{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.1em}
+  .svc h3{font-size:clamp(24px,2.4vw,30px);font-weight:600;font-variation-settings:"wdth" 108;letter-spacing:-.02em}
+  .svc p{margin:0;color:var(--ink2);font-size:15px}
+  .svc ul{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:9px;font-size:14px;color:var(--ink2)}
+  .svc li{display:flex;gap:10px;align-items:flex-start}
+  .svc li::before{content:"";flex:none;width:12px;height:12px;margin-top:4px;border:1px solid var(--accent);border-radius:2px;background:linear-gradient(135deg,var(--accent) 50%,transparent 50%)}
+  .svc .meta{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 16px;font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+  .svc .meta span,.svc .meta a{white-space:nowrap}
+  .svc .meta a{color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+  .svc .meta a:hover{color:var(--accent)}
+  @media(max-width:900px){.services{grid-template-columns:1fr}}
+  .process{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .step{border-top:1px solid var(--line2);padding-top:14px}
+  .step b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);text-transform:uppercase}
+  .step strong{display:block;margin-top:8px;font-family:var(--display);font-weight:600;font-size:18px}
+  .step p{margin:6px 0 0;color:var(--muted);font-size:14px}
+  @media(max-width:760px){.process{grid-template-columns:1fr 1fr}}
+
+  /* listen */
+  .listen{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,40px);margin-top:40px;align-items:stretch}
+  @media(max-width:900px){.listen{grid-template-columns:1fr}}
+  .ab{border:1px solid var(--line);background:var(--bg2);padding:24px;display:grid;gap:18px}
+  .ab-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .ab-top .t{font-family:var(--display);font-weight:600;font-size:18px}
+  .ab-top .m{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .seg{display:inline-grid;grid-template-columns:1fr 1fr;border:1px solid var(--line2);border-radius:999px;padding:3px;position:relative;background:var(--bg)}
+  .seg button{border:0;background:transparent;color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:9px 18px;border-radius:999px;cursor:pointer;position:relative;z-index:1;transition:color .2s}
+  .seg button[aria-pressed="true"]{color:var(--accent-ink)}
+  .seg::before{content:"";position:absolute;top:3px;bottom:3px;left:3px;width:calc(50% - 3px);border-radius:999px;background:var(--accent);transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+  .seg[data-side="b"]::before{transform:translateX(100%)}
+  canvas#scope{width:100%;height:150px;display:block;background:var(--bg);border:1px solid var(--line)}
+  .ab-bot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  .ab-bot .note{font-size:13px;color:var(--muted);max-width:44ch}
+  .play{display:inline-flex;align-items:center;gap:10px}
+  .play .dot{width:8px;height:8px;border-radius:50%;background:var(--dim)}
+  .play[data-on="1"] .dot{background:var(--ok);box-shadow:0 0 10px var(--ok)}
+  .lufs{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em}
+  .lufs .bar{height:6px;background:var(--bg);border:1px solid var(--line);position:relative;overflow:hidden}
+  .lufs .bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--accent),var(--ok));transition:width .08s linear}
+  .spot{display:flex;flex-direction:column;gap:14px}
+  .embed{position:relative;flex:1;min-height:300px;border:1px solid var(--line);background:var(--bg2);overflow:hidden;border-radius:12px}
+  .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:1;background:transparent}
+  .embed .fallback{position:absolute;inset:0;justify-items:start;padding:24px;display:grid;grid-template-rows:auto 1fr auto;gap:16px}
+  .fallback .art{aspect-ratio:1;width:96px;background:linear-gradient(135deg,var(--accent-soft),var(--bg3));border:1px solid var(--line2);display:grid;place-items:center}
+  .fallback .art svg{width:36px;height:36px;fill:var(--accent)}
+  .fallback h4{margin:0;font-family:var(--display);font-size:22px;font-weight:600}
+  .fallback p{margin:6px 0 0;color:var(--muted);font-size:14px}
+  .links{display:flex;flex-wrap:wrap;gap:10px}
+  .links .btn{gap:8px}
+  .links .btn svg{width:16px;height:16px;fill:currentColor}
+
+  /* about */
+  .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:center}
+  .about figure{margin:0;position:relative}
+  .about figure img{aspect-ratio:3/4;object-fit:cover;width:100%;filter:saturate(.9)}
+  .about figcaption{position:absolute;left:0;bottom:0;padding:12px 14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);background:linear-gradient(0deg,rgba(10,10,12,.85),transparent)}
+  .u{border-bottom:1px solid var(--line2)}
+  .u:hover{color:var(--ink);border-color:var(--ink)}
+  .about .copy p{color:var(--ink2);font-size:clamp(16px,1.5vw,18px);margin:0 0 18px}
+  .about .copy p:first-of-type{font-size:clamp(20px,2.2vw,26px);font-family:var(--display);font-weight:500;color:var(--ink);line-height:1.3;margin-top:16px}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:10px}
+  .facts div{padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .facts div:nth-child(odd){padding-right:16px;border-right:1px solid var(--line)}
+  .facts div:nth-child(even){padding-left:16px}
+  .facts small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  @media(max-width:820px){.about{grid-template-columns:1fr}.about figure{max-width:420px}}
+
+  /* credits */
+  .credits{margin-top:56px;display:grid;grid-template-columns:1fr 2fr;gap:clamp(24px,4vw,56px)}
+  @media(max-width:820px){.credits{grid-template-columns:1fr}}
+  .group h3{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-bottom:12px;border-bottom:1px solid var(--line2);display:flex;justify-content:space-between}
+    .names{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));column-gap:24px;margin:0;padding:0;list-style:none}
+  .names li{padding:11px 0;border-bottom:1px solid var(--line);font-family:var(--display);font-variation-settings:"wdth" 108;text-transform:uppercase;letter-spacing:.06em;font-size:14px;color:var(--ink2);transition:color .2s}
+  .names li:hover{color:var(--ink)}
+  .labels .names li{font-size:16px;color:var(--ink)}
+
+  /* supporter tiles */
+  .faces{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:40px}
+  @media(max-width:900px){.faces{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:520px){.faces{grid-template-columns:repeat(2,1fr)}}
+  .face{display:grid;gap:10px;text-decoration:none}
+  .face .ph{aspect-ratio:1;width:100%;background:var(--bg3);border:1px solid var(--line);overflow:hidden;position:relative;display:grid;place-items:center}
+  .face .ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .35s,transform .5s}
+  .face:hover .ph img{filter:grayscale(0);transform:scale(1.03)}
+  .face .ph.logo{background:var(--bg2)}
+  .face .ph.logo img{width:70%;height:70%;object-fit:contain;filter:none}
+  .face .ph.logo img.svg{width:64%;height:64%}
+  .face .ph.todo{background:repeating-linear-gradient(135deg,var(--bg2) 0 8px,var(--bg3) 8px 10px)}
+  .face .ph.todo b{font-family:var(--display);font-size:38px;font-weight:600;color:var(--dim);font-variation-settings:"wdth" 112}
+  .face .ph.todo small{position:absolute;left:10px;bottom:8px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .face .nm{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:13px;font-variation-settings:"wdth" 110;color:var(--ink)}
+  .face .rl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+  .photo-credits{font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.03em;line-height:1.7;margin:28px 0 0;max-width:100%}
+  .photo-credits a{color:var(--muted);border-bottom:1px solid var(--line2)}
+
+  /* contact */
+  .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,72px);align-items:start}
+  @media(max-width:820px){.contact{grid-template-columns:1fr}}
+  form{display:grid;gap:14px;margin:0}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:560px){.row{grid-template-columns:1fr}}
+  label{display:grid;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  input,select,textarea{width:100%;background:var(--bg2);border:1px solid var(--line2);color:var(--ink);padding:13px 14px;font:inherit;font-size:15px;border-radius:4px;font-family:var(--body)}
+  input::placeholder,textarea::placeholder{color:var(--dim)}
+  textarea{min-height:120px;resize:vertical}
+  select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+  .form-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-top:4px}
+  .form-foot small{color:var(--dim);font-size:12px;max-width:40ch}
+  .toast{font-family:var(--mono);font-size:12px;color:var(--ok);letter-spacing:.06em;min-height:1em}
+  .direct{display:grid;gap:20px;align-content:start;padding-top:4px}
+  .direct .big{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);font-weight:600;letter-spacing:-.02em;word-break:break-word}
+  .direct .big a{border-bottom:2px solid var(--accent)}
+  .direct .big a:hover{color:var(--accent)}
+  .direct p{margin:0;color:var(--ink2)}
+  .soc{display:grid;gap:0;border-top:1px solid var(--line)}
+  .soc a{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:14px;font-variation-settings:"wdth" 110}
+  .soc a span{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:none;letter-spacing:.04em}
+  .soc a:hover{color:var(--accent)}
+
+  footer{border-top:1px solid var(--line);padding-block:28px;color:var(--dim);font-family:var(--mono);font-size:11px;letter-spacing:.06em}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .draft{background:var(--bg2);border-top:1px solid var(--line);color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.04em;padding:12px 0}
+  .draft b{color:var(--accent);font-weight:500}
+
+  /* reveal */
+  .r{opacity:1;transform:none}
+  @media(prefers-reduced-motion:no-preference){
+    .js .r{opacity:.55;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+    .js .r.in{opacity:1;transform:none}
+  }
+  @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;width:auto}.marquee::before,.marquee::after{display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="mark" href="#top"><i></i>Ignacio Arfeli</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#listen">Listen</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#credits">Credits</a></li>
+    </ul>
+    <a class="btn primary small" href="#contact">Send me your track</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <img src="img/studio.jpg" alt="Ignacio Arfeli at the mixing desk in his studio" fetchpriority="high">
+  <div class="wrap">
+    <div class="eyebrow">Producer · Mixing · Mastering</div>
+    <h1 style="margin-top:18px">Techno that's ready for the <em>label.</em></h1>
+    <div class="sub">
+      <p>Eight years producing, mixing and mastering techno. More than fifty Beatport top‑100 charts, played and supported by Adam Beyer, Amelie Lens and Charlotte de Witte.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Send me your track <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        <a class="btn" href="#listen">Hear the difference</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap grid">
+    <div class="stat"><b>855</b><span>DJ chart entries</span></div>
+    <div class="stat"><b>53</b><span>Charted tracks</span></div>
+    <div class="stat"><b>6.47M</b><span>Streams</span></div>
+    <div class="stat"><b>15K</b><span>Followers</span></div>
+  </div>
+</div>
+
+<div class="marquee" aria-label="Supported by">
+  <div class="marquee-label">Played and supported by</div>
+  <div class="track" id="track"></div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div>
+        <div class="eyebrow">Services</div>
+        <h2>Three ways to work together.</h2>
+        <p class="lede">From a rough idea to a finished master. Every job comes back label and stream ready, with revisions built in.</p>
+      </div>
+      <div class="aside">Ableton Live · Analogue outboard · Treated room</div>
+    </div>
+
+    <div class="services">
+      <article class="svc r">
+        <div class="idx">PRODUCTION</div>
+        <h3>Full production &amp; guidance</h3>
+        <p>Bring a loop, a sketch or a reference. We build the track together and I take it all the way to a finished, label‑ready record.</p>
+        <ul>
+          <li>Arrangement, sound design and groove</li>
+          <li>Stems, project file and mixdown included</li>
+          <li>Label pitching advice on request</li>
+          <li>Two rounds of revisions</li>
+        </ul>
+        <div class="meta"><span>Turnaround · 2–3 weeks</span><a href="#contact">Request a quote →</a></div>
+      </article>
+      <article class="svc r">
+        <div class="idx">MIXING</div>
+        <h3>Mixing &amp; stem mixing</h3>
+        <p>Your arrangement, my ears. Punch, depth and a low end that translates from headphones to a Funktion‑One.</p>
+        <ul>
+          <li>Full mix or stem mix from your bounce</li>
+          <li>Club, streaming and radio references</li>
+          <li>Feedback notes on the arrangement</li>
+          <li>Two rounds of revisions</li>
+        </ul>
+        <div class="meta"><span>Turnaround · 5–7 days</span><a href="#contact">Request a quote →</a></div>
+      </article>
+      <article class="svc r">
+        <div class="idx">MASTERING</div>
+        <h3>Mastering &amp; stem mastering</h3>
+        <p>Loud where it should be, dynamic where it matters. Delivered in every format a label or distributor will ask for.</p>
+        <ul>
+          <li>Single track, EP or full release</li>
+          <li>Club master plus streaming master</li>
+          <li>WAV 24‑bit, DDP and ISRC on request</li>
+          <li>One round of revisions</li>
+        </ul>
+        <div class="meta"><span>Turnaround · 2–4 days</span><a href="#contact">Request a quote →</a></div>
+      </article>
+    </div>
+
+    <div class="process r">
+      <div class="step"><b>01</b><strong>Send the track</strong><p>A private link and a couple of reference tracks is enough to start.</p></div>
+      <div class="step"><b>02</b><strong>Quote in 24h</strong><p>Fixed price and delivery date, agreed before any work begins.</p></div>
+      <div class="step"><b>03</b><strong>First pass</strong><p>You get a full version to test in your car, your headphones and the club.</p></div>
+      <div class="step"><b>04</b><strong>Revisions &amp; delivery</strong><p>Notes go in, final files come back in every format you need.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="listen">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div>
+        <div class="eyebrow">Listen</div>
+        <h2>Hear the difference.</h2>
+        <p class="lede">Flip between a raw mix and the finished master. Same loop, same speakers, no tricks.</p>
+      </div>
+      <div class="aside">Demo loop · 128 BPM · F minor</div>
+    </div>
+
+    <div class="listen">
+      <div class="ab r">
+        <div class="ab-top">
+          <div><div class="t">Before / After</div><div class="m">Raw mix vs. mastered</div></div>
+          <div class="seg" id="seg" data-side="a">
+            <button type="button" id="btnA" aria-pressed="true">Raw mix</button>
+            <button type="button" id="btnB" aria-pressed="false">Master</button>
+          </div>
+        </div>
+        <canvas id="scope" width="900" height="150"></canvas>
+        <div class="lufs"><span>LEVEL</span><div class="bar"><i id="meter"></i></div><span id="lufsVal">−∞ dB</span></div>
+        <div class="ab-bot">
+          <button type="button" class="btn play" id="play" data-on="0"><span class="dot"></span><span id="playLabel">Play loop</span></button>
+          <div class="note">Draft uses a synthesized loop so the player works anywhere. On the live site this becomes two real clips from a recent master.</div>
+        </div>
+      </div>
+
+      <div class="spot r">
+        <div class="embed">
+          <div class="fallback">
+            <div class="art"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.6 14.4a.6.6 0 0 1-.9.2c-2.4-1.5-5.5-1.8-9.1-1a.6.6 0 1 1-.3-1.2c3.9-.9 7.3-.5 10 1.1.3.2.4.6.3.9zm1.2-2.8a.8.8 0 0 1-1.1.3c-2.8-1.7-7-2.2-10.3-1.2a.8.8 0 1 1-.5-1.5c3.8-1.1 8.5-.6 11.7 1.4.4.2.5.7.2 1zm.1-2.9C14.6 8.7 9 8.5 5.8 9.5a.9.9 0 1 1-.5-1.8c3.7-1.1 9.9-.9 13.7 1.4a.9.9 0 0 1-.9 1.6z"/></svg></div>
+            <div><h4>Ignacio Arfeli on Spotify</h4><p>Releases on Drumcode, Filth on Acid, Terminal M and more.</p></div>
+            <div class="links"><a class="btn small" href="https://open.spotify.com/artist/53nQsmYO19z1chV4aSVzlp" target="_blank" rel="noopener">Open on Spotify</a></div>
+          </div>
+        </div>
+        <div class="links">
+          <a class="btn small" href="https://open.spotify.com/artist/53nQsmYO19z1chV4aSVzlp" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn small" href="https://www.beatport.com/search?q=ignacio%20arfeli" target="_blank" rel="noopener">Beatport</a>
+          <a class="btn small" href="https://linktr.ee/ignacioarfelimusic" target="_blank" rel="noopener">All platforms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <figure class="r">
+      <img src="img/portrait.jpg" alt="Ignacio Arfeli programming a Novation Peak synthesizer in his studio" loading="lazy">
+      <figcaption>Studio · Novation Peak · Moog</figcaption>
+    </figure>
+    <div class="copy r">
+      <div class="eyebrow">About</div>
+      <p>I bring eight years of experience as a producer, mixer and mastering engineer, specialising in techno and its subgenres.</p>
+      <p>More than fifty of my tracks have entered the Beatport top 100, officially tracked by <a href="https://songstats.com" target="_blank" rel="noopener" class="u">Songstats</a>. I've released on Drumcode, Filth on Acid and Terminal M, and my records are played by the DJs who define the sound: Adam Beyer, Amelie Lens, Charlotte de Witte, Enrico Sangiuliano and Eric Prydz among them.</p>
+      <p>The same ears and the same room are available for your music. Whether you need a track built from scratch, a mix that hits, or a master that holds up on a big system, you'll get honest feedback and a record that's ready to send.</p>
+      <div class="facts">
+        <div><small>Genres</small>Techno · Peak time · Melodic · Hard groove</div>
+        <div><small>Labels</small>Drumcode · Filth on Acid · Terminal M · Volta</div>
+        <div><small>Tools</small>Ableton Live · Analogue synths · Outboard</div>
+        <div><small>Languages</small>English · Español</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="credits">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div>
+        <div class="eyebrow">Credits</div>
+        <h2>Worked with and supported by.</h2>
+        <p class="lede">Some of the leading names in the techno scene, from the labels that release the records to the DJs that play them.</p>
+      </div>
+    </div>
+
+    <div class="faces r">
+      <div class="face"><div class="ph"><img src="img/credits/beyer.jpg" alt="Adam Beyer" loading="lazy"></div><div><div class="nm">Adam Beyer</div><div class="rl">Support · Drumcode</div></div></div>
+      <div class="face"><div class="ph"><img src="img/credits/dewitte.jpg" alt="Charlotte de Witte" loading="lazy"></div><div><div class="nm">Charlotte de Witte</div><div class="rl">Support</div></div></div>
+      <div class="face"><div class="ph todo"><b>AL</b><small>Press photo</small></div><div><div class="nm">Amelie Lens</div><div class="rl">Support</div></div></div>
+      <div class="face"><div class="ph"><img src="img/credits/prydz.jpg" alt="Eric Prydz" loading="lazy"></div><div><div class="nm">Eric Prydz</div><div class="rl">Support</div></div></div>
+      <div class="face"><div class="ph todo"><b>ES</b><small>Press photo</small></div><div><div class="nm">Enrico Sangiuliano</div><div class="rl">Support</div></div></div>
+      <div class="face"><div class="ph"><img src="img/credits/kruse.jpg" alt="Monika Kruse" loading="lazy"></div><div><div class="nm">Monika Kruse</div><div class="rl">Support · Terminal M</div></div></div>
+      <div class="face"><div class="ph todo"><b>A</b><small>Press photo</small></div><div><div class="nm">ANNA</div><div class="rl">Support</div></div></div>
+      <div class="face"><div class="ph"><img src="img/credits/hilo.jpg" alt="HI-LO" loading="lazy"></div><div><div class="nm">HI-LO</div><div class="rl">Support</div></div></div>
+      <div class="face"><div class="ph logo"><img class="svg" src="img/credits/drumcode.svg" alt="Drumcode" loading="lazy"></div><div><div class="nm">Drumcode</div><div class="rl">Label</div></div></div>
+      <div class="face"><div class="ph logo"><img src="img/credits/filth.jpg" alt="Filth on Acid" loading="lazy"></div><div><div class="nm">Filth on Acid</div><div class="rl">Label</div></div></div>
+    </div>
+    <div class="credits r">
+      <div class="group labels">
+        <h3>Labels &amp; platforms</h3>
+        <ul class="names" id="listL"></ul>
+      </div>
+      <div class="group">
+        <h3>Artists &amp; DJs</h3>
+        <ul class="names" id="listA"></ul>
+      </div>
+    </div>
+
+    <p class="photo-credits">Photos via Wikimedia Commons: Adam Beyer by <a href="https://commons.wikimedia.org/wiki/File:Adam_Beyer_(3559941164).jpg" target="_blank" rel="noopener">Dave Walker</a> (CC BY 2.0) · Charlotte de Witte by <a href="https://commons.wikimedia.org/wiki/File:Charlotte_de_witte-1513626416.jpg" target="_blank" rel="noopener">Alan Overbeek</a> (CC BY-SA 4.0) · Eric Prydz by <a href="https://commons.wikimedia.org/wiki/File:Eric_Prydz_at_Glastonbury_2009.jpg" target="_blank" rel="noopener">Haydn Curtis</a> (CC BY 2.0) · Monika Kruse by <a href="https://commons.wikimedia.org/wiki/File:2016_Open_Beatz_-_Monika_Kruse_-_by_2eight_-DSC_4316.jpg" target="_blank" rel="noopener">Stefan Brending</a> (CC BY-SA 3.0) · HI-LO by <a href="https://commons.wikimedia.org/wiki/File:Airbeat_One_2015_Oliver_Heldens_by_Denis_Apel-1575.jpg" target="_blank" rel="noopener">Denis Apel</a> (CC BY-SA 4.0). Images cropped. Logos are the property of their labels.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Send me your track.</h2>
+        <p class="lede">Tell me what you need and drop a private link. You'll get a fixed quote and a delivery date within 24 hours.</p>
+      </div>
+    </div>
+    <div class="contact" style="margin-top:40px">
+      <form id="form" class="r" novalidate>
+        <div class="row">
+          <label>Name<input id="f-name" name="name" type="text" placeholder="Your name or artist name" autocomplete="name" required></label>
+          <label>Email<input id="f-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required></label>
+        </div>
+        <div class="row">
+          <label>Service
+            <select id="f-service" name="service">
+              <option>Mastering</option>
+              <option>Mixing</option>
+              <option>Full production</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label>Track link<input id="f-link" name="link" type="url" placeholder="Dropbox, Drive or SoundCloud private link"></label>
+        </div>
+        <label>Message<textarea id="f-msg" name="message" placeholder="Where is the track going, what references are you chasing, any deadline?"></textarea></label>
+        <div class="form-foot">
+          <button class="btn primary" type="submit">Send request</button>
+          <small>The draft opens your mail app with the request filled in. The live site posts straight to Ignacio's inbox.</small>
+        </div>
+        <div class="toast" id="toast" aria-live="polite"></div>
+      </form>
+      <div class="direct r">
+        <div class="big"><a href="mailto:arfeliignacio@gmail.com">arfeliignacio@gmail.com</a></div>
+        <p>Prefer to talk first? Email is fastest. For quick questions, Instagram DMs are open.</p>
+        <div class="soc">
+          <a href="https://www.instagram.com/ignacioarfelimusic/" target="_blank" rel="noopener">Instagram <span>@ignacioarfelimusic</span></a>
+          <a href="https://open.spotify.com/artist/53nQsmYO19z1chV4aSVzlp" target="_blank" rel="noopener">Spotify <span>Artist page</span></a>
+          <a href="https://linktr.ee/ignacioarfelimusic" target="_blank" rel="noopener">Linktree <span>Every platform</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Ignacio Arfeli · Music Production</span>
+    <span>Techno · Mixing · Mastering</span>
+  </div>
+</footer>
+<div class="draft"><div class="wrap"><b>Draft preview.</b> Turnaround times, revision counts, genres and the demo loop are placeholders to be confirmed with Ignacio. Tiles marked “Press photo” need an approved photo from that artist’s press kit. Everything else is from the current site.</div></div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // --- credits ---
+  var labels = ['Drumcode','Filth on Acid','Terminal M','Volta Records','Universal Music','Tomorrowland Radio'];
+  var artists = ['Adam Beyer','Aeterna','Alex Stein','Amelie Lens','ANNA','Bart Skils','Charles D','Charlotte de Witte','Chris Avantgarde','Crossbow','Di Sun','DJ Jock','Drunken Kong','Enrico Sangiuliano','Eric Prydz','Helang','HI-LO','Joris Turenhout','Korolova','Lozaanso','Mark Michael','Massano','Mattia Saviolo','Maura Loe','Meduza','Monika Kruse','Pleasurekraft','Rhapsoide','Sudo','Tommahauk','Tyriqueordie','Victor Ruiz','Wehbba','Youna'];
+  function fill(id,arr){var ul=document.getElementById(id);arr.forEach(function(n){var li=document.createElement('li');li.textContent=n;ul.appendChild(li);});}
+  fill('listL',labels); fill('listA',artists);
+
+  // --- marquee ---
+  var featured = ['Adam Beyer','Amelie Lens','Charlotte de Witte','Eric Prydz','Enrico Sangiuliano','ANNA','Drumcode','Meduza','HI-LO','Victor Ruiz','Monika Kruse','Bart Skils','Filth on Acid','Terminal M','Tomorrowland Radio','Wehbba'];
+  var track = document.getElementById('track');
+  var html = featured.map(function(n){return '<span>'+n+'</span>';}).join('');
+  track.innerHTML = html + html;
+
+  // --- reveal ---
+  var els = document.querySelectorAll('.r');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.05});
+    els.forEach(function(el){ io.observe(el); });
+    // anything already in view at load shows immediately
+    requestAnimationFrame(function(){ els.forEach(function(el){ var r=el.getBoundingClientRect(); if(r.top<innerHeight) el.classList.add('in'); }); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+
+  // --- contact (draft: mailto) ---
+  var form = document.getElementById('form');
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var name = document.getElementById('f-name').value.trim();
+    var email = document.getElementById('f-email').value.trim();
+    var svc = document.getElementById('f-service').value;
+    var link = document.getElementById('f-link').value.trim();
+    var msg = document.getElementById('f-msg').value.trim();
+    var toast = document.getElementById('toast');
+    if(!name || !email){ toast.style.color='var(--accent)'; toast.textContent='Add your name and email so Ignacio can reply.'; return; }
+    var body = 'Name: '+name+'\nEmail: '+email+'\nService: '+svc+'\nTrack: '+(link||'(none yet)')+'\n\n'+msg;
+    var href = 'mailto:arfeliignacio@gmail.com?subject='+encodeURIComponent(svc+' request from '+name)+'&body='+encodeURIComponent(body);
+    toast.style.color='var(--ok)'; toast.textContent='Opening your mail app…';
+    window.location.href = href;
+  });
+
+  // --- A/B player ---
+  var ctx=null, src=null, gA=null, gB=null, an=null, buf=null, playing=false, side='a', raf=0;
+  var seg=document.getElementById('seg'), btnA=document.getElementById('btnA'), btnB=document.getElementById('btnB');
+  var playBtn=document.getElementById('play'), playLabel=document.getElementById('playLabel');
+  var canvas=document.getElementById('scope'), cx=canvas.getContext('2d');
+  var meter=document.getElementById('meter'), lufsVal=document.getElementById('lufsVal');
+
+  function renderLoop(sr){
+    var bpm=128, beat=60/bpm, bars=2, len=bars*4*beat;
+    var oc=new OfflineAudioContext(2, Math.ceil(len*sr), sr);
+    var out=oc.createGain(); out.gain.value=.9; out.connect(oc.destination);
+    var step=beat/4, t;
+    // kick on every beat
+    for(t=0;t<len-0.01;t+=beat){
+      var o=oc.createOscillator(), g=oc.createGain();
+      o.frequency.setValueAtTime(150,t); o.frequency.exponentialRampToValueAtTime(42,t+.09);
+      g.gain.setValueAtTime(1,t); g.gain.exponentialRampToValueAtTime(.001,t+.42);
+      o.connect(g); g.connect(out); o.start(t); o.stop(t+.45);
+      var c=oc.createOscillator(), cg=oc.createGain(); // click
+      c.type='square'; c.frequency.value=1800; cg.gain.setValueAtTime(.25,t); cg.gain.exponentialRampToValueAtTime(.001,t+.012);
+      c.connect(cg); cg.connect(out); c.start(t); c.stop(t+.02);
+    }
+    // rumble bass (F1 sub, sidechained feel)
+    var b=oc.createOscillator(), bg=oc.createGain(), bf=oc.createBiquadFilter();
+    b.type='sawtooth'; b.frequency.value=43.65; bf.type='lowpass'; bf.frequency.value=180; bf.Q.value=4;
+    b.connect(bf); bf.connect(bg); bg.connect(out); b.start(0); b.stop(len);
+    for(t=0;t<len;t+=beat){ bg.gain.setValueAtTime(0.02,t); bg.gain.linearRampToValueAtTime(.42,t+.16); bg.gain.setValueAtTime(.42,t+beat-.02); }
+    // hats: offbeat 8ths + 16th ghost
+    var nb=oc.createBuffer(1,sr*0.2,sr), d=nb.getChannelData(0); for(var i=0;i<d.length;i++) d[i]=Math.random()*2-1;
+    for(t=0;t<len;t+=step){
+      var idx=Math.round(t/step)%4; if(idx===0) continue;
+      var n=oc.createBufferSource(), ng=oc.createGain(), hf=oc.createBiquadFilter();
+      n.buffer=nb; hf.type='highpass'; hf.frequency.value=7000;
+      var v = idx===2 ? .5 : .16;
+      ng.gain.setValueAtTime(v,t); ng.gain.exponentialRampToValueAtTime(.001,t+(idx===2?.09:.04));
+      n.connect(hf); hf.connect(ng); ng.connect(out); n.start(t); n.stop(t+.12);
+    }
+    // stab: F minor chord on the "and" of 2 and 4
+    var chord=[174.6,207.7,261.6,349.2];
+    for(t=beat*1.5;t<len;t+=beat*2){
+      chord.forEach(function(f){
+        var s=oc.createOscillator(), sg=oc.createGain(), sf=oc.createBiquadFilter();
+        s.type='sawtooth'; s.frequency.value=f; s.detune.value=(Math.random()*12-6);
+        sf.type='lowpass'; sf.frequency.setValueAtTime(3200,t); sf.frequency.exponentialRampToValueAtTime(500,t+.25);
+        sg.gain.setValueAtTime(.09,t); sg.gain.exponentialRampToValueAtTime(.001,t+.3);
+        s.connect(sf); sf.connect(sg); sg.connect(out); s.start(t); s.stop(t+.32);
+      });
+    }
+    // ride on 16ths in bar 2 for movement
+    for(t=len/2;t<len;t+=step){
+      var r=oc.createBufferSource(), rg=oc.createGain(), rf=oc.createBiquadFilter();
+      r.buffer=nb; rf.type='bandpass'; rf.frequency.value=9500; rf.Q.value=1.2;
+      rg.gain.setValueAtTime(.07,t); rg.gain.exponentialRampToValueAtTime(.001,t+.06);
+      r.connect(rf); rf.connect(rg); rg.connect(out); r.start(t); r.stop(t+.07);
+    }
+    return oc.startRendering();
+  }
+
+  function setup(){
+    ctx = new (window.AudioContext||window.webkitAudioContext)();
+    return renderLoop(ctx.sampleRate).then(function(b){
+      buf=b;
+      // chain A: raw mix — dull top, muddy low-mids, quieter
+      var aLP=ctx.createBiquadFilter(); aLP.type='lowpass'; aLP.frequency.value=2600; aLP.Q.value=.6;
+      var aMud=ctx.createBiquadFilter(); aMud.type='peaking'; aMud.frequency.value=260; aMud.gain.value=5; aMud.Q.value=.9;
+      gA=ctx.createGain(); gA.gain.value=.55;
+      // chain B: master — air, tight lows, glue compression, louder
+      var bHS=ctx.createBiquadFilter(); bHS.type='highshelf'; bHS.frequency.value=8000; bHS.gain.value=3;
+      var bHP=ctx.createBiquadFilter(); bHP.type='highpass'; bHP.frequency.value=28;
+      var bLow=ctx.createBiquadFilter(); bLow.type='peaking'; bLow.frequency.value=70; bLow.gain.value=2.5; bLow.Q.value=1;
+      var comp=ctx.createDynamicsCompressor(); comp.threshold.value=-14; comp.knee.value=6; comp.ratio.value=4; comp.attack.value=.004; comp.release.value=.12;
+      gB=ctx.createGain(); gB.gain.value=0;
+      an=ctx.createAnalyser(); an.fftSize=2048; an.smoothingTimeConstant=.6;
+      var master=ctx.createGain(); master.gain.value=.9;
+      var lim=ctx.createDynamicsCompressor(); lim.threshold.value=-1.5; lim.knee.value=0; lim.ratio.value=20; lim.attack.value=.001; lim.release.value=.08;
+      src=ctx.createBufferSource(); src.buffer=buf; src.loop=true;
+      src.connect(aLP); aLP.connect(aMud); aMud.connect(gA); gA.connect(master);
+      src.connect(bHP); bHP.connect(bLow); bLow.connect(bHS); bHS.connect(comp); comp.connect(gB); gB.connect(master);
+      master.connect(lim); lim.connect(an); an.connect(ctx.destination);
+      src.start();
+      applySide(true);
+    });
+  }
+
+  function applySide(instant){
+    if(!gA) return;
+    var t=ctx.currentTime, ramp=instant?0:.06;
+    gA.gain.cancelScheduledValues(t); gB.gain.cancelScheduledValues(t);
+    gA.gain.setTargetAtTime(side==='a'?.55:0,t,ramp);
+    gB.gain.setTargetAtTime(side==='b'?1:0,t,ramp);
+  }
+  function pick(s){
+    side=s; seg.dataset.side=s;
+    btnA.setAttribute('aria-pressed', s==='a'); btnB.setAttribute('aria-pressed', s==='b');
+    applySide(false);
+  }
+  btnA.addEventListener('click',function(){pick('a');});
+  btnB.addEventListener('click',function(){pick('b');});
+
+  var data=new Uint8Array(2048), fdata;
+  function draw(){
+    raf=requestAnimationFrame(draw);
+    if(!an) return;
+    an.getByteTimeDomainData(data);
+    var w=canvas.width,h=canvas.height;
+    cx.fillStyle='#0a0a0c'; cx.fillRect(0,0,w,h);
+    cx.strokeStyle='#24242a'; cx.lineWidth=1; cx.beginPath(); cx.moveTo(0,h/2); cx.lineTo(w,h/2); cx.stroke();
+    cx.strokeStyle= side==='b' ? '#8f7dff' : '#8e8c94'; cx.lineWidth=1.6; cx.beginPath();
+    var peak=0;
+    for(var i=0;i<data.length;i++){ var v=(data[i]-128)/128; peak=Math.max(peak,Math.abs(v)); var x=i/data.length*w, y=h/2 - v*(h/2-6); i?cx.lineTo(x,y):cx.moveTo(x,y); }
+    cx.stroke();
+    var db = peak>0 ? 20*Math.log10(peak) : -60;
+    var pct = Math.max(0,Math.min(1,(db+40)/40));
+    meter.style.width=(pct*100).toFixed(1)+'%';
+    lufsVal.textContent = (db<=-59?'−∞':(db>=0?'0.0':'−'+Math.abs(db).toFixed(1)))+' dB';
+  }
+  function idle(){
+    cx.fillStyle='#0a0a0c'; cx.fillRect(0,0,canvas.width,canvas.height);
+    cx.strokeStyle='#34343b'; cx.lineWidth=1.4; cx.beginPath();
+    for(var x=0;x<canvas.width;x++){ var y=canvas.height/2 + Math.sin(x/38)*Math.sin(x/9)*22; x?cx.lineTo(x,y):cx.moveTo(x,y); }
+    cx.stroke();
+  }
+  idle();
+
+  playBtn.addEventListener('click',function(){
+    if(!ctx){
+      playLabel.textContent='Loading…';
+      setup().then(function(){ playing=true; playBtn.dataset.on='1'; playLabel.textContent='Stop'; draw(); }).catch(function(){ playLabel.textContent='Audio unavailable'; });
+      return;
+    }
+    if(playing){ ctx.suspend(); playing=false; playBtn.dataset.on='0'; playLabel.textContent='Play loop'; cancelAnimationFrame(raf); idle(); meter.style.width='0%'; lufsVal.textContent='−∞ dB'; }
+    else { ctx.resume(); playing=true; playBtn.dataset.on='1'; playLabel.textContent='Stop'; draw(); }
+  });
+})();
+</script>
+
+</body>
+</html>
