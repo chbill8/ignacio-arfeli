@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <title>Ignacio Arfeli</title>
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ignacio Arfeli · Techno production, mixing and mastering">
-<meta property="og:description" content="Label-ready techno. Eight years producing, mixing and mastering, 50+ Beatport top-100 charts, supported by Adam Beyer, Amelie Lens and Charlotte de Witte.">
+<meta property="og:title" content="Ignacio Arfeli · Techno ready for release">
+<meta property="og:description" content="Techno ready for release. Production, mixing and mastering by Ignacio Arfeli. Played and supported by Adam Beyer, Amelie Lens, Charlotte de Witte and more.">
 <meta property="og:image" content="https://chbill8.github.io/ignacio-arfeli/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -249,9 +249,9 @@
   <img src="img/studio.jpg" alt="Ignacio Arfeli at the mixing desk in his studio" fetchpriority="high">
   <div class="wrap">
     <div class="eyebrow">Producer · Mixing · Mastering</div>
-    <h1 style="margin-top:18px">Techno that's ready for the <em>label.</em></h1>
+    <h1 style="margin-top:18px">Techno ready for <em>release.</em></h1>
     <div class="sub">
-      <p>Eight years producing, mixing and mastering techno. More than fifty Beatport top‑100 charts, played and supported by Adam Beyer, Amelie Lens and Charlotte de Witte.</p>
+      <p>Played and supported by Adam Beyer, Amelie Lens, Charlotte de Witte and more.</p>
       <div class="cta">
         <a class="btn primary" href="#contact">Send me your track <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
         <a class="btn" href="#listen">Hear the difference</a>
@@ -326,7 +326,7 @@
 
     <div class="process r">
       <div class="step"><b>01</b><strong>Send the track</strong><p>A private link and a couple of reference tracks is enough to start.</p></div>
-      <div class="step"><b>02</b><strong>Quote in 24h</strong><p>Fixed price and delivery date, agreed before any work begins.</p></div>
+      <div class="step"><b>02</b><strong>Quote in 48h</strong><p>Fixed price and delivery date, agreed before any work begins.</p></div>
       <div class="step"><b>03</b><strong>First pass</strong><p>You get a full version to test in your car, your headphones and the club.</p></div>
       <div class="step"><b>04</b><strong>Revisions &amp; delivery</strong><p>Notes go in, final files come back in every format you need.</p></div>
     </div>
@@ -341,7 +341,7 @@
         <h2>Hear the difference.</h2>
         <p class="lede">Flip between a raw mix and the finished master. Same loop, same speakers, no tricks.</p>
       </div>
-      <div class="aside">Demo loop · 128 BPM · F minor</div>
+      <div class="aside" id="abAside">Demo loop · 128 BPM · F minor</div>
     </div>
 
     <div class="listen">
@@ -357,7 +357,7 @@
         <div class="lufs"><span>LEVEL</span><div class="bar"><i id="meter"></i></div><span id="lufsVal">−∞ dB</span></div>
         <div class="ab-bot">
           <button type="button" class="btn play" id="play" data-on="0"><span class="dot"></span><span id="playLabel">Play loop</span></button>
-          <div class="note">Draft uses a synthesized loop so the player works anywhere. On the live site this becomes two real clips from a recent master.</div>
+          <div class="note" id="abNote">Draft uses a synthesized loop until Ignacio's real clips are in. Then this plays the same section of one of his releases, unmastered and mastered.</div>
         </div>
       </div>
 
@@ -383,7 +383,6 @@
   <div class="wrap about">
     <figure class="r">
       <img src="img/portrait.jpg" alt="Ignacio Arfeli programming a Novation Peak synthesizer in his studio" loading="lazy">
-      <figcaption>Studio · Novation Peak · Moog</figcaption>
     </figure>
     <div class="copy r">
       <div class="eyebrow">About</div>
@@ -443,7 +442,7 @@
       <div>
         <div class="eyebrow">Contact</div>
         <h2>Send me your track.</h2>
-        <p class="lede">Tell me what you need and drop a private link. You'll get a fixed quote and a delivery date within 24 hours.</p>
+        <p class="lede">Tell me what you need and drop a private link. You'll get a fixed quote and a delivery date within 48 hours.</p>
       </div>
     </div>
     <div class="contact" style="margin-top:40px">
@@ -497,8 +496,8 @@
   document.getElementById('yr').textContent = new Date().getFullYear();
 
   // --- credits ---
-  var labels = ['Drumcode','Filth on Acid','Terminal M','Volta Records','Universal Music','Tomorrowland Radio'];
-  var artists = ['Adam Beyer','Aeterna','Alex Stein','Amelie Lens','ANNA','Bart Skils','Charles D','Charlotte de Witte','Chris Avantgarde','Crossbow','Di Sun','DJ Jock','Drunken Kong','Enrico Sangiuliano','Eric Prydz','Helang','HI-LO','Joris Turenhout','Korolova','Lozaanso','Mark Michael','Massano','Mattia Saviolo','Maura Loe','Meduza','Monika Kruse','Pleasurekraft','Rhapsoide','Sudo','Tommahauk','Tyriqueordie','Victor Ruiz','Wehbba','Youna'];
+  var labels = ['Drumcode','Filth on Acid','Terminal M','Aeterna','Volta Records','Universal Music','Tomorrowland Radio'];
+  var artists = ['Adam Beyer','Alex Stein','Amelie Lens','ANNA','Bart Skils','Charles D','Charlotte de Witte','Chris Avantgarde','Crossbow','Di Sun','DJ Jock','Drunken Kong','Enrico Sangiuliano','Eric Prydz','Helang','HI-LO','Joris Turenhout','Korolova','Lozaanso','Mark Michael','Massano','Mattia Saviolo','Meduza','Monika Kruse','Pleasurekraft','Rhapsoide','Sudo','Tommahauk','Tyriqueordie','Victor Ruiz','Wehbba','Youna'];
   function fill(id,arr){var ul=document.getElementById(id);arr.forEach(function(n){var li=document.createElement('li');li.textContent=n;ul.appendChild(li);});}
   fill('listL',labels); fill('listA',artists);
 
@@ -594,29 +593,58 @@
     return oc.startRendering();
   }
 
+  var aLevel=.55;
+  function loadReal(){
+    var urls=['audio/before.mp3','audio/after.mp3'];
+    return Promise.all(urls.map(function(u){
+      return fetch(u,{cache:'no-cache'}).then(function(r){
+        var ct=(r.headers.get('content-type')||'').toLowerCase();
+        if(!r.ok || !(/audio|octet-stream|mpeg|mp4|aac/.test(ct))) throw new Error('missing');
+        return r.arrayBuffer();
+      });
+    })).then(function(bufs){
+      return Promise.all(bufs.map(function(ab){ return new Promise(function(res,rej){ ctx.decodeAudioData(ab,res,rej); }); }));
+    }).catch(function(){ return null; });
+  }
+
   function setup(){
     ctx = new (window.AudioContext||window.webkitAudioContext)();
-    return renderLoop(ctx.sampleRate).then(function(b){
-      buf=b;
-      // chain A: raw mix — dull top, muddy low-mids, quieter
-      var aLP=ctx.createBiquadFilter(); aLP.type='lowpass'; aLP.frequency.value=2600; aLP.Q.value=.6;
-      var aMud=ctx.createBiquadFilter(); aMud.type='peaking'; aMud.frequency.value=260; aMud.gain.value=5; aMud.Q.value=.9;
-      gA=ctx.createGain(); gA.gain.value=.55;
-      // chain B: master — air, tight lows, glue compression, louder
-      var bHS=ctx.createBiquadFilter(); bHS.type='highshelf'; bHS.frequency.value=8000; bHS.gain.value=3;
-      var bHP=ctx.createBiquadFilter(); bHP.type='highpass'; bHP.frequency.value=28;
-      var bLow=ctx.createBiquadFilter(); bLow.type='peaking'; bLow.frequency.value=70; bLow.gain.value=2.5; bLow.Q.value=1;
-      var comp=ctx.createDynamicsCompressor(); comp.threshold.value=-14; comp.knee.value=6; comp.ratio.value=4; comp.attack.value=.004; comp.release.value=.12;
-      gB=ctx.createGain(); gB.gain.value=0;
-      an=ctx.createAnalyser(); an.fftSize=2048; an.smoothingTimeConstant=.6;
-      var master=ctx.createGain(); master.gain.value=.9;
-      var lim=ctx.createDynamicsCompressor(); lim.threshold.value=-1.5; lim.knee.value=0; lim.ratio.value=20; lim.attack.value=.001; lim.release.value=.08;
-      src=ctx.createBufferSource(); src.buffer=buf; src.loop=true;
-      src.connect(aLP); aLP.connect(aMud); aMud.connect(gA); gA.connect(master);
-      src.connect(bHP); bHP.connect(bLow); bLow.connect(bHS); bHS.connect(comp); comp.connect(gB); gB.connect(master);
-      master.connect(lim); lim.connect(an); an.connect(ctx.destination);
-      src.start();
-      applySide(true);
+    gA=ctx.createGain(); gA.gain.value=0;
+    gB=ctx.createGain(); gB.gain.value=0;
+    an=ctx.createAnalyser(); an.fftSize=2048; an.smoothingTimeConstant=.6;
+    var master=ctx.createGain(); master.gain.value=.9;
+    gA.connect(master); gB.connect(master);
+    return loadReal().then(function(real){
+      if(real){
+        // Real clips: the files already carry the raw-vs-master difference, so no processing and no extra limiter.
+        aLevel=1; master.gain.value=1;
+        master.connect(an); an.connect(ctx.destination);
+        var sA=ctx.createBufferSource(); sA.buffer=real[0]; sA.loop=true; sA.connect(gA);
+        var sB=ctx.createBufferSource(); sB.buffer=real[1]; sB.loop=true; sB.connect(gB);
+        var t0=ctx.currentTime+.05; sA.start(t0); sB.start(t0); src=sA;
+        document.getElementById('abNote').textContent='The same section of one of Ignacio\'s releases: the unmastered mix, then the master he delivered.';
+        document.getElementById('abAside').textContent='One of his releases · Unmastered vs. mastered';
+        applySide(true);
+        return;
+      }
+      return renderLoop(ctx.sampleRate).then(function(b){
+        buf=b;
+        // chain A: raw mix — dull top, muddy low-mids, quieter
+        var aLP=ctx.createBiquadFilter(); aLP.type='lowpass'; aLP.frequency.value=2600; aLP.Q.value=.6;
+        var aMud=ctx.createBiquadFilter(); aMud.type='peaking'; aMud.frequency.value=260; aMud.gain.value=5; aMud.Q.value=.9;
+        // chain B: master — air, tight lows, glue compression, louder
+        var bHS=ctx.createBiquadFilter(); bHS.type='highshelf'; bHS.frequency.value=8000; bHS.gain.value=3;
+        var bHP=ctx.createBiquadFilter(); bHP.type='highpass'; bHP.frequency.value=28;
+        var bLow=ctx.createBiquadFilter(); bLow.type='peaking'; bLow.frequency.value=70; bLow.gain.value=2.5; bLow.Q.value=1;
+        var comp=ctx.createDynamicsCompressor(); comp.threshold.value=-14; comp.knee.value=6; comp.ratio.value=4; comp.attack.value=.004; comp.release.value=.12;
+        var lim=ctx.createDynamicsCompressor(); lim.threshold.value=-1.5; lim.knee.value=0; lim.ratio.value=20; lim.attack.value=.001; lim.release.value=.08;
+        master.connect(lim); lim.connect(an); an.connect(ctx.destination);
+        src=ctx.createBufferSource(); src.buffer=buf; src.loop=true;
+        src.connect(aLP); aLP.connect(aMud); aMud.connect(gA);
+        src.connect(bHP); bHP.connect(bLow); bLow.connect(bHS); bHS.connect(comp); comp.connect(gB);
+        src.start();
+        applySide(true);
+      });
     });
   }
 
@@ -624,7 +652,7 @@
     if(!gA) return;
     var t=ctx.currentTime, ramp=instant?0:.06;
     gA.gain.cancelScheduledValues(t); gB.gain.cancelScheduledValues(t);
-    gA.gain.setTargetAtTime(side==='a'?.55:0,t,ramp);
+    gA.gain.setTargetAtTime(side==='a'?aLevel:0,t,ramp);
     gB.gain.setTargetAtTime(side==='b'?1:0,t,ramp);
   }
   function pick(s){
